@@ -28,7 +28,7 @@ public class projectile_controller : MonoBehaviour {
 		{
 			Instantiate(explosion,col.transform.position, Quaternion.identity);
 			Destroy (col.gameObject);
-			GameObject.FindObjectOfType<game_manager>().AddScore();
+			//GameObject.FindObjectOfType<game_manager>().AddScore();
 			Destroy (gameObject);
 
 

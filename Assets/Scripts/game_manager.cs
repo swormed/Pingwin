@@ -4,28 +4,28 @@ using UnityEngine.UI;
 
 public class game_manager : MonoBehaviour {
 
-	public int enemyPoints = 1;
+	//public int enemyPoints = 1;
 	int destroyedEnemies = 0;
 	int score = 0;
 	public Text textScore;
 
 
-	public int zycia = 0;
+	public int zycia = 10;
 	int actualShips;
 	public Text lifes;
 
 	void Start()
 	{
-        //actualShips = zycia;
+        actualShips = zycia;
         lifes.text = zycia.ToString();
 	}
 
 	public void AddScore() 
 	{
-		//score += destroyedEnemies*10;
-		destroyedEnemies++;
-		score += destroyedEnemies*enemyPoints;
-		textScore.text = score.ToString ();
+		
+		//destroyedEnemies++;
+		//score += destroyedEnemies*enemyPoints;
+		//textScore.text = score.ToString ();
 
 	}
 
@@ -33,7 +33,7 @@ public class game_manager : MonoBehaviour {
 	{
 		zycia--;
 		lifes.text = zycia.ToString ();
-		//actualShips--;
+		actualShips--;
 		if (actualShips == 0) 
 		{
 		//koniec gry
@@ -42,8 +42,8 @@ public class game_manager : MonoBehaviour {
 	}
     public void PlusPlus()
     {
-        zycia++;
-        lifes.text = zycia.ToString ();
+        score++;
+		textScore.text = score.ToString ();
         //actualShips--;
         
         //lifes.text = actualShips.ToString();
