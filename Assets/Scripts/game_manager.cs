@@ -36,7 +36,7 @@ public class game_manager : MonoBehaviour {
 		actualShips--;
 		if (actualShips == 0) 
 		{
-		//koniec gry
+			Application.LoadLevel("ekransmierci");
 		}
 		//lifes.text = actualShips.ToString ();
 	}

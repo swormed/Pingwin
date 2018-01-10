@@ -28,7 +28,7 @@ public class enemy_manager : MonoBehaviour {
 
 	void SpawnNewEnemy ()
 	{
-		Vector3 pos = new Vector3(Random.Range(-4,4),15,0);
+		Vector3 pos = new Vector3(Random.Range(-4.4f,4.4f),15,0);
 		pos += new Vector3 (0, 8, 0);
 		lastSpawnTime = Time.time;
 		spawnTime = Random.Range (minSpawnTime, maxSpawnTime);
