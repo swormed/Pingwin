@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class projectile_controller : MonoBehaviour {
+public class pocisk : MonoBehaviour {
 
 	public int speed = 3000;
 	float startTime;

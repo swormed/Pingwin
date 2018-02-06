@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class enemy_ship : MonoBehaviour {
+public class tarcza : MonoBehaviour {
 	//public float speed = 100;
 	public float minSpeed = 60f;
 	public float maxSpeed = 70f;

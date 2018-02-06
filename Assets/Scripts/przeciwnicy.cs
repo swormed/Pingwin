@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class enemy_manager : MonoBehaviour {
+public class przeciwnicy : MonoBehaviour {
 
 	public GameObject enemyPrefab;
 	public GameObject enemyPrefab2;

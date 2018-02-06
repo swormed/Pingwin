@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class game_manager : MonoBehaviour {
+public class gra_sterowanie : MonoBehaviour {
 
 	//public int enemyPoints = 1;
 	int destroyedEnemies = 0;
@@ -43,6 +43,9 @@ public class game_manager : MonoBehaviour {
     public void PlusPlus()
     {
         score++;
+		if (score % 30==0) {
+			zycia++;
+		}
 		textScore.text = score.ToString ();
         //actualShips--;
         

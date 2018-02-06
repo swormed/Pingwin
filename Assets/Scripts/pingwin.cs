@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class player_controller : MonoBehaviour {
+public class pingwin : MonoBehaviour {
 
 	public float speed = 3.0f;
 	private Rigidbody rb;
@@ -91,14 +91,14 @@ public class player_controller : MonoBehaviour {
     void OnTriggerEnter(Collider col)
 	{
 		if (col.tag == "enemy") {
-			GameObject.FindObjectOfType<game_manager>().Lifes();
+			GameObject.FindObjectOfType<gra_sterowanie>().Lifes();
 			Destroy (col.gameObject);
 			GetComponent<AudioSource>().clip = bum;
 			GetComponent<AudioSource>().Play();
 		}
         if (col.tag == "ball")
         {
-            GameObject.FindObjectOfType<game_manager>().PlusPlus();
+            GameObject.FindObjectOfType<gra_sterowanie>().PlusPlus();
             Destroy(col.gameObject);
             
         }
